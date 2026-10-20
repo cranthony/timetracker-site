@@ -2,14 +2,17 @@
 
 The public site for [Time Tracker](https://timetracker.tools): a home page,
 privacy policy and terms of service, as Google's OAuth consent screen
-requires. Plain HTML and CSS, served by GitHub Pages from `main` with the
-custom domain in `CNAME`.
+requires. Plain HTML and CSS, served by a Render static site that redeploys on
+every push to `main`; the custom domain is set in Render's dashboard.
 
 Pages:
 
 - `index.html` – home page
-- `privacy.html` – privacy policy (served at `/privacy`)
-- `terms.html` – terms of service (served at `/terms`)
+- `privacy/index.html` – privacy policy (served at `/privacy`)
+- `terms/index.html` – terms of service (served at `/terms`)
+
+The contact address is assembled by `contact.js` at load time, so it
+isn't in the HTML for address harvesters.
 
 The software it describes lives in
 [time-tracking-google-calendar-mcp](https://github.com/cranthony/time-tracking-google-calendar-mcp)
