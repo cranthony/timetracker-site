@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Time Tracker</title>
+  <meta name="description" content="Time Tracker is a personal time-tracking tool that keeps what you do on a calendar of its own in your Google account, with notes, goals and habits alongside.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site">
+    <div class="inner">
+      <a class="brand" href="/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Time Tracker
+      </a>
+      <nav>
+        <a href="/" aria-current="page">Home</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Keep track of where your time goes.</h1>
+    <p class="lede">Time Tracker records what you do, when, with whom and where, as events on a calendar of its own in your Google account, and helps you see how your days add up.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Your calendar, your data</h3>
+        <p>Everything is stored in a Google Calendar and a spreadsheet that Time Tracker creates in your own Google account. Nothing is kept anywhere else.</p>
+      </div>
+      <div class="card">
+        <h3>Notes as you go</h3>
+        <p>Jot a quick note of what you're doing. Later, the notes are compacted into events with the actions, people and places they involve.</p>
+      </div>
+      <div class="card">
+        <h3>Goals and habits</h3>
+        <p>Set goals, define habits, and see how the time you record measures against them.</p>
+      </div>
+      <div class="card">
+        <h3>Works with Claude</h3>
+        <p>The server speaks the Model Context Protocol, so you can review and record your time in conversation with Claude if you choose to connect it.</p>
+      </div>
+    </div>
+
+    <h2>How it works</h2>
+    <p>Time Tracker is two pieces of open-source software that you run yourself:</p>
+    <ul>
+      <li><strong>A server</strong> that talks to Google Calendar and Google Sheets on your behalf and exposes tools over the Model Context Protocol. Source: <a href="https://github.com/cranthony/time-tracking-google-calendar-mcp">time-tracking-google-calendar-mcp</a>.</li>
+      <li><strong>An app</strong> for Android, Windows and the web that shows your days as a timeline, with the notes, events, plans, goals and habits behind them. Source: <a href="https://github.com/cranthony/time-tracker-client">time-tracker-client</a>.</li>
+    </ul>
+
+    <h2>Access to your Google account</h2>
+    <p>Time Tracker asks Google for the narrowest access that does the job. It can only see and change calendars and spreadsheets that it created itself. It cannot read your other calendars, your other Drive files, your email or your contacts. The <a href="/privacy">privacy policy</a> spells out what is accessed and why.</p>
+
+    <div class="note">
+      <p>Time Tracker is a personal project. Each copy is run by the person who uses it. There is no hosted service to sign up for.</p>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="inner">
+      <span>Time Tracker</span>
+      <a href="/privacy">Privacy policy</a>
+      <a href="/terms">Terms of service</a>
+      <a href="mailto:privacy@timetracker.tools">privacy@timetracker.tools</a>
+    </div>
+  </footer>
+</body>
+</html>
